@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:MainView title="Simple Window"
+	maximized="true" xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:my="org.dndp.gui.player"
+	xmlns="org.apache.pivot.wtk" >
+	<BoxPane orientation="VERTICAL">
+		<BoxPane bxml:id="show" styles="{padding:4}">
+			<TextInput bxml:id="one" textKey="value"/>
+			<TextInput bxml:id="two" textKey="bonus"/>
+			<PushButton bxml:id="submit" buttonData="Submit." />
+		</BoxPane>
+		<BoxPane styles="{padding:4}">
+			<TextInput bxml:id="firstResponse" enabled="false"/>
+			<TextInput bxml:id="secondResponse" enabled="false"/>
+			<PushButton bxml:id="dump" buttonData="Get." />
+		</BoxPane>
+	</BoxPane>
+</my:MainView>
