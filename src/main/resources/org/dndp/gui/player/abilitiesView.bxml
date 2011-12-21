@@ -4,8 +4,8 @@
 	xmlns:my="org.dndp.gui.player"
 	xmlns="org.apache.pivot.wtk" orientation="VERTICAL"
 	styles="{padding:4}" >
-	<my:AbilitieView ablityName="strenght"/>
-	<my:AbilitieView ablityName="dextarity"/>
+	<my:AbilitieView ablityName="strength"/>
+	<my:AbilitieView ablityName="dexterity"/>
 	<my:AbilitieView ablityName="constitution" />
 	<my:AbilitieView ablityName="inteligence" />
 	<my:AbilitieView ablityName="wisdom" />
