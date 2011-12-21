@@ -28,7 +28,7 @@ public class Starter implements Application
 	@Override
 	public boolean shutdown(boolean optional) throws Exception
 	{
-		if(window == null)
+		if(window != null)
 			window.close();
 		return false;
 	}
