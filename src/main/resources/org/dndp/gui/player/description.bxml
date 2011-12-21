@@ -2,21 +2,41 @@
 <my:DescriptionView visible="true"
 	xmlns:bxml="http://pivot.apache.org/bxml" xmlns:my="org.dndp.gui.player"
 	xmlns="org.apache.pivot.wtk">
-	<BoxPane orientation="HORIZONTAL" styles="{padding:4}">
-		<Border title="Gracz" styles="{padding:3}">
-			<TextInput />
-		</Border>
-		<Border title="Imię">
-			<TextInput />
-		</Border>
-	</BoxPane>
-	<BoxPane orientation="HORIZONTAL" styles="{padding:4}">
-		<TextInput />
-		<TextInput />
-		<TextInput />
-		<TextInput />
-		<TextInput />
-		<TextInput />
-		<TextInput />
-	</BoxPane>
+	<GridPane columnCount="2"
+		styles="{horizontalSpacing:3, verticalSpacing:3}">
+		<GridPane.Row>
+			<Border title="Gracz" styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Imię"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+		</GridPane.Row>
+	</GridPane>
+	<GridPane columnCount="8"
+		styles="{horizontalSpacing:3, verticalSpacing:3}">
+		<GridPane.Row>
+			<Border title="Charakter"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Wiek"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Włosy"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Oczy"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Skóra"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Wzrost"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+			<Border title="Waga"  styles="{padding:3}">
+				<TextInput />
+			</Border>
+		</GridPane.Row>
+	</GridPane>
 </my:DescriptionView>
