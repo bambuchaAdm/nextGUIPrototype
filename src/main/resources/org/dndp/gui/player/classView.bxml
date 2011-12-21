@@ -1,33 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <my:ClassView xmlns:bxml="http://pivot.apache.org/bxml"
 	xmlns:my="org.dndp.gui.player" xmlns="org.apache.pivot.wtk"
-	styles="{ padding:3, horizontalSpacing :2 , verticalSpacing : 2 }"
-	
-	>
+	styles="{ padding:3, horizontalSpacing :2 , verticalSpacing : 2 }">
 	<columns>
 		<TablePane.Column width="1*" />
 		<TablePane.Column width="1*" />
 		<TablePane.Column width="1*" />
 	</columns>
 	<TablePane.Row height="1*">
-		<ScrollPane>
-			<ListView />
+		<ScrollPane horizontalScrollBarPolicy="fill"
+			verticalScrollBarPolicy="fill_to_capacity">
+			<ListView listData="['One','Two','Three','Foure']" />
 		</ScrollPane>
-		<BoxPane orientation="VERTICAL" styles="{ padding:3, fill:true, horizontalAlignment : 'center', verticalAlignment :'center' }">
-			<TextInput />
-			<TextInput />
+		<BoxPane orientation="VERTICAL"
+			styles="{ padding:3, fill:true, horizontalAlignment : 'center', verticalAlignment :'center' }">
+			<Border title="Poziom" styles="{padding:3}">
+				<TextInput />
+			</Border>
 		</BoxPane>
-		<BoxPane orientation="VERTICAL" styles="{ padding:3, fill:true, horizontalAlignment : 'center', verticalAlignment :'center' }">
+		<BoxPane orientation="VERTICAL"
+			styles="{ padding:3, fill:true, horizontalAlignment : 'center', verticalAlignment :'center' }">
 			<Border title="Suma" styles="{padding:3}">
 				<TextInput />
 			</Border>
 		</BoxPane>
 	</TablePane.Row>
 
-	<TablePane.Row height="20">
-		<TextInput />
-		<TextInput />
-		<TextInput />
+	<TablePane.Row height="35">
+		<Border title="Doświadczenie" styles="{padding:3}">
+			<TextInput />
+		</Border>
+		<Border title="Kara" styles="{padding:3}">
+			<TextInput />
+		</Border>
+		<Border title="Następny" styles="{padding:3}">
+			<TextInput />
+		</Border>
 	</TablePane.Row>
 
 </my:ClassView>
