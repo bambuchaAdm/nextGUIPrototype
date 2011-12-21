@@ -10,12 +10,11 @@ import org.apache.pivot.wtk.GridPane;
 import org.apache.pivot.wtk.Orientation;
 import org.apache.pivot.wtk.TablePane;
 
-public class ClassView extends GridPane implements Bindable
+public class ClassView extends TablePane implements Bindable
 {
 	public ClassView()
 	{
-		getStyles().put("padding", 3);
-		getStyles().put("fill", true);
+
 	}
 
 	@Override

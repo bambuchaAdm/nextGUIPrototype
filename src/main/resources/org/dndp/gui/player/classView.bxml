@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<my:ClassView title="Simple Window" maximized="true"
-	xmlns:bxml="http://pivot.apache.org/bxml" xmlns:my="org.dndp.gui.player"
-	xmlns="org.apache.pivot.wtk" columnCount="3"
-	styles="{horizontalSpicing:3,verticalSpicing:3}">
-	<GridPane.Row>
+<my:ClassView xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:my="org.dndp.gui.player" xmlns="org.apache.pivot.wtk">
+	<columns>
+		<TablePane.Column width="1*" />
+		<TablePane.Column width="-1" />
+		<TablePane.Column width="-1" />
+	</columns>
+	<TablePane.Row height="1*">
 		<ScrollPane>
 			<ListView />
 		</ScrollPane>
-		<BoxPane orientation="VERTICAL" style="{padding:3}" >
+		<BoxPane orientation="VERTICAL" styles="{padding:3, fill:true}">
 			<TextInput />
 			<TextInput />
 		</BoxPane>
-		<Border title="suma" >
-			<TextInput />
-		</Border>
-	</GridPane.Row>
-	
+		<BoxPane>
+			<Border title="Suma">
+				<TextInput />
+			</Border>
+		</BoxPane>
+	</TablePane.Row>
+
+	<TablePane.Row height="30">
+		<TextInput />
+		<TextInput />
+		<TextInput />
+	</TablePane.Row>
 
 </my:ClassView>
