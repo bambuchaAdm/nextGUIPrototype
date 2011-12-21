@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:HPView
+	xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:my="org.dndp.gui.player"
+	xmlns="org.apache.pivot.wtk" orientation="HORIZONTAL"
+	styles="{padding:4,fill:true}">
+	<Border title="Obecne" styles="{padding:3}">
+		<TextInput />
+	</Border>
+	<Border title="Maksymalne" styles="{padding:3}">
+		<TextInput />
+	</Border>
+		
+	
+</my:HPView>
