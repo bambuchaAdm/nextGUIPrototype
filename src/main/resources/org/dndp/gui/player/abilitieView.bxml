@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:AbilitieView
+	xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:my="org.dndp.gui.player"
+	xmlns="org.apache.pivot.wtk" orientation="HORIZONTAL"
+	styles="{padding:4}" >
+	<Label bxml:id="nameLabel" />
+	<TextInput bxml:id="value" textKey="value" />
+	<TextInput bxml:id="modifier" textKey="modifier"/>
+</my:AbilitieView>

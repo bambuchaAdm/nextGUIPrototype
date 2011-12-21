@@ -15,7 +15,7 @@ public class Starter implements Application
 			throws Exception
 	{
 		BXMLSerializer serializer = new BXMLSerializer();
-		window = (Window)serializer.readObject(MainView.class, "mainView.xml");
+		window = (Window)serializer.readObject(MainView.class, "mainView.bxml");
 		window.open(display);
 	}
 

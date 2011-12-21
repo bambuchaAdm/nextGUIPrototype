@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:AbilitiesView
+	xmlns:bxml="http://pivot.apache.org/bxml"
+	xmlns:my="org.dndp.gui.player"
+	xmlns="org.apache.pivot.wtk" orientation="VERTICAL"
+	styles="{padding:4}" >
+	<my:AbilitieView name="strenght"/>
+	<my:AbilitieView name="dextarity"/>
+	<my:AbilitieView name="constitution" />
+	<my:AbilitieView name="inteligence" />
+	<my:AbilitieView name="wisdom" />
+	<my:AbilitieView name="charisma" />
+</my:AbilitiesView>

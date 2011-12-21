@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<my:Abilitie
-	xmlns:bxml="http://pivot.apache.org/bxml"
-	xmlns:my="org.dndp.gui.player"
-	xmlns="org.apache.pivot.wtk" >
-	<BoxPane orientation="HORIZONTAL">
-		
-	</BoxPane>
-</my:Abilitie>
