@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<my:DescriptionView visible="true"
+	xmlns:bxml="http://pivot.apache.org/bxml" xmlns:my="org.dndp.gui.player"
+	xmlns="org.apache.pivot.wtk">
+	<BoxPane orientation="HORIZONTAL" styles="{padding:4}">
+		<Border title="Gracz" styles="{padding:3}">
+			<TextInput />
+		</Border>
+		<Border title="Imię">
+			<TextInput />
+		</Border>
+	</BoxPane>
+	<BoxPane orientation="HORIZONTAL" styles="{padding:4}">
+		<TextInput />
+		<TextInput />
+		<TextInput />
+		<TextInput />
+		<TextInput />
+		<TextInput />
+		<TextInput />
+	</BoxPane>
+</my:DescriptionView>
