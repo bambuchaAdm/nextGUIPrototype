@@ -9,6 +9,7 @@ import org.apache.pivot.wtk.Window;
 
 public class MainView extends Window implements Bindable
 {
+	@Override
 	public void initialize(Map<String, Object> namespace, URL location,
 			Resources resources)
 	{

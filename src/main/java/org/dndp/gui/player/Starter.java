@@ -9,8 +9,31 @@ import org.apache.pivot.wtk.Window;
 
 public class Starter implements Application
 {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)
+	{
+		DesktopApplicationContext.main(Starter.class, args);
+	}
+
 	private Window	window;
 
+	@Override
+	public void resume() throws Exception
+	{
+
+	}
+
+	@Override
+	public boolean shutdown(boolean optional) throws Exception
+	{
+		if(window == null)
+			window.close();
+		return false;
+	}
+
+	@Override
 	public void startup(Display display, Map<String, String> properties)
 			throws Exception
 	{
@@ -19,29 +42,10 @@ public class Starter implements Application
 		window.open(display);
 	}
 
-	public boolean shutdown(boolean optional) throws Exception
-	{
-		if(window == null)
-			window.close();
-		return false;
-	}
-
+	@Override
 	public void suspend() throws Exception
 	{
 
-	}
-
-	public void resume() throws Exception
-	{
-
-	}
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args)
-	{
-		DesktopApplicationContext.main(Starter.class, args);
 	}
 
 }

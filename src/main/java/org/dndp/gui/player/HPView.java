@@ -1,4 +1,5 @@
 package org.dndp.gui.player;
+
 import java.net.URL;
 
 import org.apache.pivot.beans.Bindable;
